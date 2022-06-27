@@ -49,7 +49,7 @@ function jfclone(x) {
     })
   }
   if (str === 'Date') {
-    return new DataTransfer(+x)
+    return new Date(+x)
   }
   if (str === 'RegExp') {
     tmp = new RegExp(x.source, x.flags)
