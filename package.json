@@ -1,6 +1,6 @@
 {
   "name": "jfclone",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "deep cloning ",
   "main": "index.js",
   "scripts": {

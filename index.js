@@ -4,7 +4,7 @@ function jfclone(x) {
   }
   var k, tmp, str = Object.prototype.toString.call(x).slice(8, -1)
   if (str === 'Object') {
-    if (x.constructor !== Object && typeof x.constructor !== 'function') {
+    if (x.constructor !== Object && typeof x.constructor === 'function') {
       tmp = new x.constructor()
       for (k in x) {
         if (x.hasOwnProperty(k) && tmp[k] !== x[k]) {
